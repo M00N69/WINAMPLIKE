@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winamp Radio Wave - Themes Edition</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'Digital';
+      src: url('https://fonts.cdnfonts.com/s/14101/digital-7.mono.woff') format('woff');
+    }
+    body {
+      background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+      margin: 0;
+      padding: 0;
+      color: var(--theme-accent, #34d399);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+    .winamp-skin {
+      background: var(--theme-skin, linear-gradient(180deg, #2d3436 0%, #000000 100%));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.8), inset 0 1px 1px rgba(255,255,255,0.05);
+      border-radius: 4px;
+    }
+    .winamp-title-bar {
+      background: var(--theme-title, linear-gradient(90deg, #0984e3 0%, #00cec9 100%));
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    .lcd-screen {
+      background: #000;
+      border: 2px solid #1a1a1a;
+      box-shadow: inset 0 0 15px var(--theme-glow, rgba(52, 211, 153, 0.2));
+    }
+    .digital-glow {
+      font-family: 'Digital', monospace;
+      text-shadow: 0 0 12px var(--theme-glow, rgba(52, 211, 153, 0.6));
+      color: var(--theme-accent, #34d399);
+    }
+    .accent-text {
+      color: var(--theme-accent, #34d399);
+    }
+    .accent-bg {
+      background-color: var(--theme-accent, #34d399);
+    }
+    .accent-border {
+      border-color: var(--theme-accent, #34d399);
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      background: #000;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--theme-accent, #475569);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

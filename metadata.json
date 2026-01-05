@@ -1,0 +1,7 @@
+{
+  "name": "Winamp Radio Wave",
+  "description": "A retro Winamp-inspired radio player with search, favorites, and a classic audio visualizer.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
